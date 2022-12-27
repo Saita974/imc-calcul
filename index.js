@@ -1,5 +1,9 @@
-// créer variable poids (kg) et taille (m)
-  let weight = 54;
+//convertir poids livre en kg
+  let livre = 60;
+  let weightConvertKg = (livre * 0.45359237).toFixed(0);
+  console.log(weightConvertKg);
+//créer variable poids (kg) et taille (m)
+  let weight = weightConvertKg;
   let height = 1.76;
 // créer fonction pour le calcul de l'IMC
   let imc = parseFloat((weight / (height * height)).toFixed(1));
