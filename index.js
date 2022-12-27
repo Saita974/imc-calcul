@@ -1,14 +1,21 @@
 //convertir poids livre en kg
   let livre = 60;
-  let weightConvertKg = (livre * 0.45359237).toFixed(0);
-  console.log(weightConvertKg);
+  let livreConvertKg = (livre * 0.45359237).toFixed(0);
+  console.log(`${livreConvertKg}kg`);
+
+  // convertir des feets en m
+  let feet = 5.7;
+  let feetConvertM = (feet * 0.3048).toFixed(2);
+  console.log(`${feetConvertM}m`);
+
 //créer variable poids (kg) et taille (m)
-  let weight = weightConvertKg;
-  let height = 1.76;
+  let weight = livreConvertKg;
+  let height = feetConvertM;
+
 // créer fonction pour le calcul de l'IMC
   let imc = parseFloat((weight / (height * height)).toFixed(1));
-
   console.log(`Ton IMC est de ${imc}`)
+
 // déterminer les catégories d'IMC
   switch (true) {
     //moins de 18,5 (maigreur)
